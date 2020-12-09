@@ -31,6 +31,7 @@ INSTALLED_APPS = [
 
     # Internal Apps
     'cvapp',
+    'accounts',
 ]
 
 MIDDLEWARE = [
