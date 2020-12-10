@@ -32,6 +32,9 @@ INSTALLED_APPS = [
     # Internal Apps
     'cvapp',
     'accounts',
+
+    # Third Party Apps
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -113,3 +116,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# REST FRAMEWORK SETTINGS
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+}
