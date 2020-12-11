@@ -32,8 +32,6 @@ INSTALLED_APPS = [
     # Internal Apps
     'cvapp',
 
-    # Third Party Apps
-    'rest_framework',
 ]
 
 MIDDLEWARE = [
